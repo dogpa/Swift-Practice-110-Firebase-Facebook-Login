@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		2DA2443B2737AC1F003E841A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA244392737AC1F003E841A /* Main.storyboard */; };
 		2DA2443D2737AC21003E841A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2443C2737AC21003E841A /* Assets.xcassets */; };
 		2DA244402737AC21003E841A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2443E2737AC21003E841A /* LaunchScreen.storyboard */; };
+		2DA244482737ACCB003E841A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DA244472737ACCB003E841A /* GoogleService-Info.plist */; };
+		2DA2444B2737B134003E841A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA2444A2737B134003E841A /* FirebaseAnalytics */; };
+		2DA2444D2737B134003E841A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA2444C2737B134003E841A /* FirebaseAuth */; };
+		2DA244502737BF59003E841A /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA2444F2737BF59003E841A /* FacebookLogin */; };
+		2DA244582737FDC4003E841A /* Self Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA244572737FDC4003E841A /* Self Function.swift */; };
+		2DA2445A2737FE34003E841A /* LoginSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA244592737FE34003E841A /* LoginSuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,9 @@
 		2DA2443C2737AC21003E841A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DA2443F2737AC21003E841A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DA244412737AC21003E841A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA244472737ACCB003E841A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2DA244572737FDC4003E841A /* Self Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Self Function.swift"; sourceTree = "<group>"; };
+		2DA244592737FE34003E841A /* LoginSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA2444B2737B134003E841A /* FirebaseAnalytics in Frameworks */,
+				2DA2444D2737B134003E841A /* FirebaseAuth in Frameworks */,
+				2DA244502737BF59003E841A /* FacebookLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +70,40 @@
 			children = (
 				2DA244332737AC1F003E841A /* AppDelegate.swift */,
 				2DA244352737AC1F003E841A /* SceneDelegate.swift */,
-				2DA244372737AC1F003E841A /* ViewController.swift */,
+				2DA244562737FDB0003E841A /* Function For Two Page */,
+				2DA244532737FD6D003E841A /* Login View 登入頁 */,
+				2DA244552737FD84003E841A /* Login Success 登入成功 */,
 				2DA244392737AC1F003E841A /* Main.storyboard */,
 				2DA2443C2737AC21003E841A /* Assets.xcassets */,
 				2DA2443E2737AC21003E841A /* LaunchScreen.storyboard */,
 				2DA244412737AC21003E841A /* Info.plist */,
+				2DA244472737ACCB003E841A /* GoogleService-Info.plist */,
 			);
 			path = "Swift Practice # 110 Firebase Facebook Login";
+			sourceTree = "<group>";
+		};
+		2DA244532737FD6D003E841A /* Login View 登入頁 */ = {
+			isa = PBXGroup;
+			children = (
+				2DA244372737AC1F003E841A /* ViewController.swift */,
+			);
+			path = "Login View 登入頁";
+			sourceTree = "<group>";
+		};
+		2DA244552737FD84003E841A /* Login Success 登入成功 */ = {
+			isa = PBXGroup;
+			children = (
+				2DA244592737FE34003E841A /* LoginSuccessViewController.swift */,
+			);
+			path = "Login Success 登入成功";
+			sourceTree = "<group>";
+		};
+		2DA244562737FDB0003E841A /* Function For Two Page */ = {
+			isa = PBXGroup;
+			children = (
+				2DA244572737FDC4003E841A /* Self Function.swift */,
+			);
+			path = "Function For Two Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +122,11 @@
 			dependencies = (
 			);
 			name = "Swift Practice # 110 Firebase Facebook Login";
+			packageProductDependencies = (
+				2DA2444A2737B134003E841A /* FirebaseAnalytics */,
+				2DA2444C2737B134003E841A /* FirebaseAuth */,
+				2DA2444F2737BF59003E841A /* FacebookLogin */,
+			);
 			productName = "Swift Practice # 110 Firebase Facebook Login";
 			productReference = 2DA244302737AC1F003E841A /* Swift Practice # 110 Firebase Facebook Login.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +154,10 @@
 				Base,
 			);
 			mainGroup = 2DA244272737AC1F003E841A;
+			packageReferences = (
+				2DA244492737B134003E841A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2DA2444E2737BF59003E841A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = 2DA244312737AC1F003E841A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DA244402737AC21003E841A /* LaunchScreen.storyboard in Resources */,
+				2DA244482737ACCB003E841A /* GoogleService-Info.plist in Resources */,
 				2DA2443D2737AC21003E841A /* Assets.xcassets in Resources */,
 				2DA2443B2737AC1F003E841A /* Main.storyboard in Resources */,
 			);
@@ -139,6 +188,8 @@
 			files = (
 				2DA244382737AC1F003E841A /* ViewController.swift in Sources */,
 				2DA244342737AC1F003E841A /* AppDelegate.swift in Sources */,
+				2DA2445A2737FE34003E841A /* LoginSuccessViewController.swift in Sources */,
+				2DA244582737FDC4003E841A /* Self Function.swift in Sources */,
 				2DA244362737AC1F003E841A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +392,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DA244492737B134003E841A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.9.1;
+			};
+		};
+		2DA2444E2737BF59003E841A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DA2444A2737B134003E841A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA244492737B134003E841A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2DA2444C2737B134003E841A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA244492737B134003E841A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2DA2444F2737BF59003E841A /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA2444E2737BF59003E841A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DA244282737AC1F003E841A /* Project object */;
 }
